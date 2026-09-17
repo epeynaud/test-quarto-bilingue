@@ -37,4 +37,8 @@ On remarque ici que dans les noms des repertoires `_site-fr` et `_site-en` les p
    .github/workflows/deploy.yml
    ```
 
-2. Les **GitHub Pages** du dépôt : sur la page web du dépôt aller dans Settings > Pages. Dans **Branch** sélectionner la branche concernée ( `main` pour moi) et sauvegarder. 
+2. Les **GitHub Pages** du dépôt : sur la page web du dépôt aller dans Settings > Pages. Dans **Build and deployment** sélectionner`GitHub Actions` . 
+
+3. A chaque push, les actions vont se lancer 
+
+4. Le site sera visible à l'adresse https://USERNAME.github.io/YOURREPO/
