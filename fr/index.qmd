@@ -1,0 +1,11 @@
+---
+title: Emilie Peynaud
+---
+
+Bienvenue sur mon site ! Vous trouverez ici toutes mes info !
+
+- [Recherche](research.qmd)
+- [Publications](publications.qmd)
+- [CV](cv.qmd)
+
+Retour à la page [méta](/../../index.html)

@@ -1,0 +1,14 @@
+{
+  "publications.qmd": {
+    "publications.html": "8e2a5066"
+  },
+  "research.qmd": {
+    "research.html": "d981852d"
+  },
+  "cv.qmd": {
+    "cv.html": "7790eebe"
+  },
+  "index.qmd": {
+    "index.html": "6f24ff64"
+  }
+}

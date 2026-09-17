@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: _site-en
+
+website:
+  back-to-top-navigation: true  # Back to top button at the bottom of the page
+  title: "Dr. Emilie Peynaud"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: cv.qmd
+        text: CV
+      - href: publications.qmd
+        text: Publications
+    right:
+      - href: ../../fr/_site-fr
+        text: 🇫🇷 Français
+
+lang: en
+
+
+page-footer:
+    center: "© 2026 Emilie Peynaud"
+
+format:
+  html:
+    theme: yeti # thème à choisir parmi les thèmes bootstraps prédéfinis voir https://bootswatch.com/
+    toc: true
+
+execute:
+  freeze: auto  # re-render only when source changes
+
