@@ -28,3 +28,13 @@ On remarque ici que dans les noms des repertoires `_site-fr` et `_site-en` les p
    ```
 
 ## La routine pour intégrer tout cela dans github : on va faire avec des GitHub Actions# test-quarto-bilingue
+
+
+
+1. Création du workflow dans le fichier de déploiment, puis `commit` et `push` sur le dépôt. 
+   
+   ```
+   .github/workflows/deploy.yml
+   ```
+
+2. Les **GitHub Pages** du dépôt : sur la page web du dépôt aller dans Settings > Pages. Dans **Branch** sélectionner la branche concernée ( `main` pour moi) et sauvegarder. 
