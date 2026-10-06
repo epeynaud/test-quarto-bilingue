@@ -41,15 +41,19 @@ jobs:
       - name: Inspect generated files
         run: |
           echo "=== SITE FR ==="
-          find _site-fr -type f | sort
+          find _site/_site-fr -type f | sort
 
           echo ""
           echo "=== SITE EN ==="
-          find _site-en -type f | sort
+          find _site/_site-en -type f | sort
 
           echo ""
           echo "=== PUBLIC ==="
           find _site -type f | sort
+
+	  echo ""
+	  echo "=== index.html ==="
+	  cat _site/index.html
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
