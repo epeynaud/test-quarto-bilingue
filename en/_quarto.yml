@@ -16,7 +16,7 @@ website:
       - href: publications.qmd
         text: Publications
     right:
-      - href: ../../fr/_site-fr
+      - href: ../_site-fr
         text: 🇫🇷 Français
 
 lang: en

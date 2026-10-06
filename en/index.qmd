@@ -4,4 +4,4 @@ title: Emilie Peynaud
 
 Welcome to my website in English. Here you can find details on my research activities, my publications and my CV.
 
-Back to [meta page](/../../index.html)
+Back to [meta page](/../index.html)

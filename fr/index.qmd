@@ -8,4 +8,4 @@ Bienvenue sur mon site ! Vous trouverez ici toutes mes info !
 - [Publications](publications.qmd)
 - [CV](cv.qmd)
 
-Retour à la page [méta](/../../index.html)
+Retour à la page [méta](/../index.html)
