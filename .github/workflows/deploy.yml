@@ -49,7 +49,7 @@ jobs:
 
           echo ""
           echo "=== PUBLIC ==="
-          find public -type f | sort
+          find _site -type f | sort
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
