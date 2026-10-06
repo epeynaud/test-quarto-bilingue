@@ -38,6 +38,19 @@ jobs:
           cp -r en/_site-en _site/_site-en
           cp -r fr/_site-fr _site/_site-fr
 
+      - name: Inspect generated files
+        run: |
+          echo "=== SITE FR ==="
+          find _site-fr -type f | sort
+
+          echo ""
+          echo "=== SITE EN ==="
+          find _site-en -type f | sort
+
+          echo ""
+          echo "=== PUBLIC ==="
+          find public -type f | sort
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
