@@ -51,9 +51,9 @@ jobs:
           echo "=== PUBLIC ==="
           find _site -type f | sort
 
-	  echo ""
-	  echo "=== index.html ==="
-	  cat _site/index.html
+          echo ""
+          echo "=== index.html ==="
+          cat _site/index.html
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
