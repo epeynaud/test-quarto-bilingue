@@ -19,18 +19,17 @@ Pour l'intégration dans github, il va falloir faire un fichier d'intégration q
 
 On remarque ici que dans les noms des repertoires `_site-fr` et `_site-en` les particules `-fr` et `-en` sont redondantes avec le chemin du répertoire : la cas échéant on pourra modifier les noms du répertoire de destination des fichiers html dans le fichier `_quarto.yml`.
 
-
-
 3. En local, pour mimer le déploiement du site dans Github, on crée un répertoire dans lequel on met les "sous-sites" : 
-```
-mkdir _site
-cp -r en/_site-en/ _site/
-cp -r fr/_site-fr/ _site/
-cp index.html _site/
-cp style.css _site/
-```
-De cette manière, on aura les bons liens vers les sous-sites dans les versions locales et déployées dans Github. 
-
+   
+   ```
+   mkdir _site
+   cp -r en/_site-en/ _site/
+   cp -r fr/_site-fr/ _site/
+   cp index.html _site/
+   cp style.css _site/
+   ```
+   
+   De cette manière, on aura les bons liens vers les sous-sites dans les versions locales et déployées dans Github. 
 
 4. Pour visualiser le site web en local, il faut utiliser un serveur HTTP local, car en faisant simplement `firefox index.html̀`, on obtient des erreurs 404 quand on clique vers les liens sur les index.html de l'autre langue (pour changer de langue pendant la navigation). Pour contourner cela, dans un terminal se placer dans le répertoire du site "méta" et faire les commandes suivantes dans un teminal : 
    
@@ -39,8 +38,10 @@ De cette manière, on aura les bons liens vers les sous-sites dans les versions 
    python3 -m http.server 8000
    firefox http://localhost:8000/
    ```
-Les étapes 1 à 3 sont regroupées dans le script `deploy-local.sh`. L'étape 4 est faite dans `serve-local.sh`. 
+   
+   Les étapes 1 à 3 sont regroupées dans le script `deploy-local.sh`. L'étape 4 est faite dans `serve-local.sh`. 
 
+:triangular_flag_on_post: Pour que les liens fonctionnent pendant la preview lancer `firefox` sur le fichier `index.html` qui se trouve dans le répertoire du site déployé dans `_site` (et non sur celui versionné dans le dépôt).
 
 ## La routine pour intégrer tout cela dans github : on va faire avec des GitHub Actions# test-quarto-bilingue
 
