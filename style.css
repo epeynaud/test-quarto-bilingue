@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #FAFAF8;
   color: #333333;
   font:
     1em / 1.4 "Helvetica Neue",
@@ -25,15 +25,15 @@ h2 {
 }
 h1,
 h2 {
-  color: purple;
+    color: #267C80; /* #287A83; /* blue;*/
 }
 
 dt {
-  color: purple;
+    color: #267C80; /* #287A83; /*  purple;*/
 }
 
 p {
-  color: rgb(0, 0, 0);
+    color: #292D32; /* rgb(0, 0, 0);*/
   margin: 0.5em 0;
 }
 
@@ -42,3 +42,34 @@ st {
   color: gray;
   margin: 0.5em 0;
 }
+
+
+<style>
+
+/* Conteneur des boutons */
+.boutons {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Apparence des boutons */
+.bouton {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #267C80; /* #245B66; /* #287A83; #2C3E50 */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+/* Effet au survol */
+.bouton:hover {
+  background-color: #1C5960;
+  color: white;
+}
+
+</style>
