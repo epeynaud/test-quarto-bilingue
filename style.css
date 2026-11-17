@@ -44,8 +44,6 @@ st {
 }
 
 
-<style>
-
 /* Conteneur des boutons */
 .boutons {
   display: flex;
@@ -71,5 +69,3 @@ st {
   background-color: #1C5960;
   color: white;
 }
-
-</style>
