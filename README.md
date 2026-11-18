@@ -48,11 +48,17 @@ On remarque ici que dans les noms des repertoires `_site-fr` et `_site-en` les p
 1. Création du workflow dans le fichier de déploiment, puis `commit` et `push` sur le dépôt. 
    
    ```
-   .github/workflows/deploy.yml
+   mkdir -p .github/workflows
+   emacs .github/workflows/deploy.yml
    ```
-
+Décrire les actions à faire dans le fichier deploy.yml (voir l'exemple). Puis l'envoyer sur le dépôt distant : 
+```
+git add .github/workflows/deploy.yml
+git commit -m "Add GitHub Actions deployment workflow"
+git push origin main
+```
 2. Les **GitHub Pages** du dépôt : sur la page web du dépôt aller dans Settings > Pages. Dans **Build and deployment** sélectionner`GitHub Actions` . 
 
 3. A chaque push, les actions vont se lancer. Voir le résultats des actions et les log dans l'onglet Action. 
 
-4. Le site sera visible à l'adresse https://USERNAME.github.io/YOURREPO/
+4. Le site sera visible à l'adresse https://USERNAME.github.io/YOURREPO/ ou à l'adresse https://USERNAME.github.io/ si ton dépôt s'appelle `USERNAME.github.io`.
